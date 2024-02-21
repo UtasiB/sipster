@@ -3,5 +3,22 @@ footer{
 }
 
 img{
-    size: 80%;
+    border-radius: 5%;
+}
+
+h1{
+    text-align: center;
+}
+#carouselExampleIndicators {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
 }
