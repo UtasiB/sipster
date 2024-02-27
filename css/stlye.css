@@ -1,0 +1,22 @@
+main{
+    width: 100%;
+    padding: 20px;
+}
+.card{
+    margin: 10px;
+    background-color: #6C6C6C;
+}
+.card-text{
+    background-color: white;
+}
+.cimDiv{
+    background-color: white;
+    text-align: center;
+    width: 75%;
+    align-self: center;
+}
+.card-img-top{
+    margin-top: 10px;
+    background-color: white;
+    align-self: center;
+}
