@@ -1,0 +1,12 @@
+.tartalom{
+    text-align: justify;
+}
+.elso>p,b{
+    width: 55%;
+    float: right;
+    margin-right: 5%;
+}
+img{
+    width: 38%;
+    margin-top: 0%;
+}
