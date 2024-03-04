@@ -43,11 +43,18 @@ body {
 
 footer {
     text-align: center;
+    background-color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 40px 0;
 }
 
 select {
     padding: 10px;
     font-size: 16px;
+    margin-right: 150;
   }
 
 body.dark-mode {
@@ -55,7 +62,12 @@ body.dark-mode {
     color: #AAE729;
   }
 
-nav.dark-mode{
-    background-color: #9A9A9A;
+.navbar.dark-mode{
+    background-color: #5B5B5B;
+    color: #AAE729;
+}
+
+.footer.dark-mode{
+    background-color: #5B5B5B;
     color: #AAE729;
 }
