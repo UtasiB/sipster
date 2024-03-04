@@ -1,0 +1,37 @@
+.tartalom{
+    text-align: justify;
+}
+.elso{
+    margin-bottom: 3%;
+}
+.masodik{
+    margin-bottom: 3%;
+}
+
+.harmadik{
+    margin-bottom: 3%;
+}
+
+.elso>p,b{
+    width: 55%;
+    float: right;
+    margin-right: 5%;
+}
+.masodik>p,b{
+    width: 55%;
+    float: right;
+    margin-right: 5%;
+}
+.harmadik>p,b{
+    margin-top: 0.42%;
+    width: 55%;
+    float: right;
+    margin-right: 5%;
+}
+img{
+    object-fit: contain;
+    width: 38%;
+    height: auto;
+    margin-top: 0%;
+    margin-left: 1%;
+}
