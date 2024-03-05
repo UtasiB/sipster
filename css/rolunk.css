@@ -20,6 +20,7 @@ body {
     transition: background-color 0.3s;
     background-color: #FFFFFF;
     color: #3C486B;
+    
 }
 
 .content {
@@ -71,3 +72,19 @@ body.dark-mode {
     background-color: #5B5B5B;
     color: #AAE729;
 }
+
+a:link{
+    color: #3C486B;
+}
+
+a:visited{
+    color: #3C486B;
+}
+
+.dark-mode a:link {
+    color: #AAE729;
+  }
+
+  .dark-mode a:visited {
+    color: #AAE729;
+  }

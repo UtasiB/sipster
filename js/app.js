@@ -17,7 +17,14 @@ function toggleMode() {
   navbar.classList.toggle("dark-mode", selectedMode === "dark");
   
   var footers = document.getElementsByClassName("footer");
+
   for (var j = 0; j < footers.length; j++) {
     footers[j].classList.toggle("dark-mode", selectedMode === "dark");
+  }
+
+  var links = document.getElementsByTagName("a");
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].classList.toggle("dark-mode-link", selectedMode === "dark");
   }
 }
