@@ -35,3 +35,23 @@ img{
     margin-top: 0%;
     margin-left: 1%;
 }
+@media screen and (max-width: 1050px) {
+    img{
+        width: 95%;
+    }
+    .elso>p,b{
+        width: 95%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .masodik>p,b{
+        width: 95%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .harmadik>p,b{
+        width: 95%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
