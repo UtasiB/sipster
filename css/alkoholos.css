@@ -14,6 +14,7 @@ main{
     background-color: #b4b4b4;
 }
 .card-text{
+    padding: 5px;
     background-color: white;
     border-radius: 10px;
     
@@ -41,4 +42,28 @@ main{
     height: auto;
     width: 100%;
     object-fit: contain;
+}
+.adagButton{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-self: center;
+    border-radius: 20px;
+}
+.minus{
+    width: 70%;
+    border-radius: 20px;
+    margin-right: 10%;
+    font-size: 20px;
+}
+.plus{
+    width: 70%;
+    border-radius: 20px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.serveCount{
+    font-size: 20px;
 }
