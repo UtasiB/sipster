@@ -51,17 +51,9 @@ main{
     margin-bottom: 10px;
     align-self: center;
     border-radius: 20px;
-}
-.minus{
-    width: 70%;
-    border-radius: 20px;
-    margin-right: 10%;
-    font-size: 20px;
-}
-.plus{
-    width: 70%;
-    border-radius: 20px;
-    margin-left: 10%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 20px;
 }
 .serveCount{
