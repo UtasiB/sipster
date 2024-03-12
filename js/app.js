@@ -18,6 +18,12 @@ function toggleMode() {
   
   var footers = document.getElementsByClassName("footer");
 
+  var selects = document.getElementsByName("select");
+
+  for (var k = 0; k < selects.length; k++) {
+    selects[k].classList.toggle("dark-mode", selectedMode === "dark");
+  }
+
   for (var j = 0; j < footers.length; j++) {
     footers[j].classList.toggle("dark-mode", selectedMode === "dark");
   }

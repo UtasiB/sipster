@@ -1,9 +1,18 @@
+
+@font-face{
+    font-family: LilitaOne;
+    src: url(/LilitaOne-Regular.ttf);
+}
+
 img {
     border-radius: 50%;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 body {
@@ -14,7 +23,12 @@ body {
     transition: background-color 0.3s;
     background-color: #E4E4E4;
     color: #3C486B;
+    font-family: LilitaOne;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
 
 .navbar{
     transition: background-color 0.3s;
@@ -27,6 +41,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex: 1;
 }
 
 .image-wrapper {
@@ -38,25 +53,41 @@ body {
 }
 
 .image-wrapper img {
-    max-width: 100%;
-    height: auto;
+    margin: 5px;
+    flex: 0 0 calc(33.33% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
     text-align: center;
     background-color: #FFFFFF;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 40px 0;
+    height: 80px;
+    padding: 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+nav{
+    display: flex;
+    align-content: space-between;
 }
 
 select {
     padding: 10px;
     font-size: 16px;
-    margin-right: 150;
+    color: #3C486B;
+    border-radius: 100px;
+    padding: 10px 14px;
+    background: #FFFFFF
   }
+
+.dark-mode select{
+    background: #2C2C2C;
+    color: #AAE729;
+}
 
 body.dark-mode {
     background-color: #2C2C2C;
