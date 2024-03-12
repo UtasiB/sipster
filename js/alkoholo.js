@@ -8,10 +8,10 @@ let BeachAfonya = document.querySelector("#BeachAfonya");
 BeachPlus.addEventListener('click', function(){
     BeachCount.innerText = Number(BeachCount.innerHTML) + 1;
 
-    BeachVodka.innerText = Number(BeachVodka.innerHTML) * BeachCount.innerHTML;
-    BeachBols.innerHTML = Number(BeachBols.innerHTML) * Number(BeachCount.innerHTML);
-    BeachNarancs.innerHTML = Number(BeachNarancs.innerHTML) * Number(BeachCount.innerHTML);
-    BeachAfonya.innerHTML = Number(BeachAfonya.innerHTML) * Number(BeachCount.innerHTML);
+    BeachVodka.innerText = Number(BeachVodka.innerHTML) + 4;
+    BeachBols.innerHTML = Number(BeachBols.innerHTML) + 2 ;
+    BeachNarancs.innerHTML = Number(BeachNarancs.innerHTML) + 8;
+    BeachAfonya.innerHTML = Number(BeachAfonya.innerHTML) + 4;
 });
 
 BeachMinus.addEventListener('click', function(){
@@ -24,10 +24,10 @@ BeachMinus.addEventListener('click', function(){
         BeachAfonya.innerHTML = Number(BeachAfonya.innerHTML) / 1;
     }
     else{
-    BeachVodka.innerText = Number(BeachVodka.innerHTML) / BeachCount.innerHTML;
-    BeachBols.innerHTML = Number(BeachBols.innerHTML) / Number(BeachCount.innerHTML);
-    BeachNarancs.innerHTML = Number(BeachNarancs.innerHTML) / Number(BeachCount.innerHTML);
-    BeachAfonya.innerHTML = Number(BeachAfonya.innerHTML) / Number(BeachCount.innerHTML);
+    BeachVodka.innerText = Number(BeachVodka.innerHTML) - 4;
+    BeachBols.innerHTML = Number(BeachBols.innerHTML) - 2;
+    BeachNarancs.innerHTML = Number(BeachNarancs.innerHTML) - 8;
+    BeachAfonya.innerHTML = Number(BeachAfonya.innerHTML) - 4;
 
     BeachCount.innerText = Number(BeachCount.innerHTML) - 1;
     }
