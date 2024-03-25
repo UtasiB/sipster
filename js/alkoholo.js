@@ -170,3 +170,98 @@ LongMinus.addEventListener('click', function(){
         LongCount.innerText = Number(LongCount.innerHTML) - 1;
     }
 });
+
+//moscow mule
+let muleMinus = document.querySelector("#muleMinus");
+let mulePlus = document.querySelector("#mulePlus");
+let muleVodka = document.querySelector("#muleVodka");
+
+mulePlus.addEventListener('click', function(){
+    muleCount.innerText = Number(muleCount.innerHTML) + 1;
+
+    muleVodka.innerHTML = Number(muleVodka.innerHTML) + 4;
+
+});
+
+muleMinus.addEventListener('click', function(){
+    if (muleCount.innerHTML==1) {
+        muleCount.innerText = 1;
+
+        muleVodka.innerText = Number(muleVodka.innerHTML) / 1;
+    }
+    else{
+        muleVodka.innerText = Number(muleVodka.innerHTML) - 4;
+
+        muleCount.innerText = Number(muleCount.innerHTML) - 1;
+    }
+});
+
+//Cosmopolitan
+let cosmoMinus = document.querySelector("#cosmoMinus");
+let cosmoPlus = document.querySelector("#cosmoPlus");
+let cosmoVodka = document.querySelector("#cosmoVodka");
+let cosmoLikor = document.querySelector("#cosmoLikor");
+let cosmoAfonya = document.querySelector("#cosmoAfonya");
+let cosmoLime = document.querySelector("#cosmoLime");
+
+cosmoPlus.addEventListener('click', function(){
+    cosmoCount.innerText = Number(cosmoCount.innerHTML) + 1;
+
+    cosmoVodka.innerText = Number(cosmoVodka.innerHTML) + 45;
+    cosmoLikor.innerHTML = Number(cosmoLikor.innerHTML) + 15 ;
+    cosmoAfonya.innerHTML = Number(cosmoAfonya.innerHTML) + 40;
+    cosmoLime.innerHTML = Number(cosmoLime.innerHTML) + 10;
+
+});
+
+cosmoMinus.addEventListener('click', function(){
+    if (cosmoCount.innerHTML==1) {
+        cosmoCount.innerText = 1;
+
+        cosmoVodka.innerText = Number(cosmoVodka.innerHTML) / 1;
+        cosmoLikor.innerHTML = Number(cosmoLikor.innerHTML) / 1;
+        cosmoAfonya.innerHTML = Number(cosmoAfonya.innerHTML) / 1;
+        cosmoLime.innerHTML = Number(cosmoLime.innerHTML) / 1;
+    }
+    else{
+        cosmoVodka.innerText = Number(cosmoVodka.innerHTML) - 45;
+        cosmoLikor.innerHTML = Number(cosmoLikor.innerHTML) - 15;
+        cosmoAfonya.innerHTML = Number(cosmoAfonya.innerHTML) - 40;
+        cosmoLime.innerHTML = Number(cosmoLime.innerHTML) -10;
+
+        cosmoCount.innerText = Number(cosmoCount.innerHTML) - 1;
+    }
+});
+
+//Grasshopper
+let grassMinus = document.querySelector("#grassMinus");
+let grassPlus = document.querySelector("#grassPlus");
+let grassLikor = document.querySelector("#grassLikor");
+let grassCacao = document.querySelector("#grassCacao");
+let grassTejszin = document.querySelector("#grassTejszin");
+
+grassPlus.addEventListener('click', function(){
+    grassCount.innerText = Number(grassCount.innerHTML) + 1;
+
+    grassLikor.innerText = Number(grassLikor.innerHTML) + 30;
+    grassCacao.innerHTML = Number(grassCacao.innerHTML) + 30 ;
+    grassTejszin.innerHTML = Number(grassTejszin.innerHTML) + 30;
+});
+
+grassMinus.addEventListener('click', function(){
+    if (grassCount.innerHTML==1) {
+        grassCount.innerText = 1;
+
+        grassLikor.innerText = Number(grassLikor.innerHTML) / 1;
+        grassCacao.innerHTML = Number(grassCacao.innerHTML) / 1;
+        grassTejszin.innerHTML = Number(grassTejszin.innerHTML) / 1;
+        cosmoLime.innerHTML = Number(cosmoLime.innerHTML) / 1;
+    }
+    else{
+        grassLikor.innerText = Number(grassLikor.innerHTML) - 30;
+        grassCacao.innerHTML = Number(grassCacao.innerHTML) - 30;
+        grassTejszin.innerHTML = Number(grassTejszin.innerHTML) - 30;
+
+        grassCount.innerText = Number(grassCount.innerHTML) - 1;
+    }
+});
