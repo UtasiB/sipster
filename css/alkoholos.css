@@ -52,7 +52,7 @@ main{
     flex-direction: row;
     margin-bottom: 10px;
     align-self: center;
-    border-radius: 20px;
+    border-radius: 18px;
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
@@ -60,4 +60,7 @@ main{
 }
 .serveCount{
     font-size: 20px;
+}
+.btn{
+    background-color: white;
 }
