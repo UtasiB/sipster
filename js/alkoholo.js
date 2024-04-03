@@ -255,7 +255,6 @@ grassMinus.addEventListener('click', function(){
         grassLikor.innerText = Number(grassLikor.innerHTML) / 1;
         grassCacao.innerHTML = Number(grassCacao.innerHTML) / 1;
         grassTejszin.innerHTML = Number(grassTejszin.innerHTML) / 1;
-        cosmoLime.innerHTML = Number(cosmoLime.innerHTML) / 1;
     }
     else{
         grassLikor.innerText = Number(grassLikor.innerHTML) - 30;
@@ -263,5 +262,197 @@ grassMinus.addEventListener('click', function(){
         grassTejszin.innerHTML = Number(grassTejszin.innerHTML) - 30;
 
         grassCount.innerText = Number(grassCount.innerHTML) - 1;
+    }
+});
+
+//Bloody mary
+let maryMinus = document.querySelector("#maryMinus");
+let maryPlus = document.querySelector("#maryPlus");
+let maryVodka = document.querySelector("#maryVodka");
+let maryPari = document.querySelector("#maryPari");
+let maryCitrom = document.querySelector("#maryCitrom");
+let maryLime = document.querySelector("#maryLime");
+let marySo = document.querySelector("#marySo");
+let maryBors = document.querySelector("#maryBors");
+
+maryPlus.addEventListener('click', function(){
+    maryCount.innerText = Number(maryCount.innerHTML) + 1;
+
+    maryVodka.innerText = Number(maryVodka.innerHTML) + 4.5;
+    maryPari.innerHTML = Number(maryPari.innerHTML) + 9;
+    maryCitrom.innerHTML = Number(maryCitrom.innerHTML) + 1.5;
+    maryLime.innerHTML = Number(maryLime.innerHTML) + 10;
+    marySo.innerHTML = Number(marySo.innerHTML) + 1;
+    maryBors.innerHTML = Number(maryBors.innerHTML) + 1;
+});
+
+maryMinus.addEventListener('click', function(){
+    if (maryCount.innerHTML==1) {
+        maryCount.innerText = 1;
+
+        maryVodka.innerText = Number(maryVodka.innerHTML) / 1;
+        maryPari.innerHTML = Number(maryPari.innerHTML) / 1;
+        maryCitrom.innerHTML = Number(maryCitrom.innerHTML) / 1;
+        maryLime.innerHTML = Number(maryLime.innerHTML) / 1;
+        marySo.innerHTML = Number(marySo.innerHTML) / 1;
+        maryBors.innerHTML = Number(maryBors.innerHTML) / 1;
+    }
+    else{
+        maryVodka.innerText = Number(maryVodka.innerHTML) - 4.5;
+        maryPari.innerHTML = Number(maryPari.innerHTML) - 9;
+        maryCitrom.innerHTML = Number(maryCitrom.innerHTML) - 1.5;
+        maryLime.innerHTML = Number(maryLime.innerHTML) / 10;
+        marySo.innerHTML = Number(marySo.innerHTML) - 1;
+        maryBors.innerHTML = Number(maryBors.innerHTML) / 1;
+
+        maryCount.innerText = Number(maryCount.innerHTML) - 1;
+    }
+});
+
+//Cuba libre
+let cubaMinus = document.querySelector("#cubaMinus");
+let cubaPlus = document.querySelector("#cubaPlus");
+let cubaJeg = document.querySelector("#cubaJeg");
+let cubaRum = document.querySelector("#cubaRum");
+
+cubaPlus.addEventListener('click', function(){
+    cubaCount.innerText = Number(cubaCount.innerHTML) + 1;
+
+    cubaJeg.innerText = Number(cubaJeg.innerHTML) + 3;
+    cubaRum.innerHTML = Number(cubaRum.innerHTML) + 6;
+});
+
+cubaMinus.addEventListener('click', function(){
+    if (cubaCount.innerHTML==1) {
+        cubaCount.innerText = 1;
+
+        cubaJeg.innerText = Number(cubaJeg.innerHTML) / 1;
+        cubaRum.innerHTML = Number(cubaRum.innerHTML) / 1;
+    }
+    else{
+        cubaJeg.innerText = Number(cubaJeg.innerHTML) - 3;
+        cubaRum.innerHTML = Number(cubaRum.innerHTML) - 6;
+
+        cubaCount.innerText = Number(cubaCount.innerHTML) - 1;
+    }
+});
+
+//Tequila sunrise
+let sunMinus = document.querySelector("#sunMinus");
+let sunPlus = document.querySelector("#sunPlus");
+let sunJeg = document.querySelector("#sunJeg");
+let sunTeq = document.querySelector("#sunTeq");
+let sunSzirup = document.querySelector("#sunSzirup");
+let sunNarancs = document.querySelector("#sunNarancs");
+
+
+sunPlus.addEventListener('click', function(){
+    sunCount.innerText = Number(sunCount.innerHTML) + 1;
+
+    sunJeg.innerText = Number(sunJeg.innerHTML) + 3;
+    sunTeq.innerHTML = Number(sunTeq.innerHTML) + 4;
+    sunSzirup.innerHTML = Number(sunSzirup.innerHTML) + 1;
+    sunNarancs.innerHTML = Number(sunNarancs.innerHTML) + 1;
+
+});
+
+sunMinus.addEventListener('click', function(){
+    if (sunCount.innerHTML==1) {
+        sunCount.innerText = 1;
+
+        sunJeg.innerText = Number(sunJeg.innerHTML) / 1;
+        sunTeq.innerHTML = Number(sunTeq.innerHTML) / 1;
+        sunSzirup.innerHTML = Number(sunSzirup.innerHTML) / 1;
+        sunNarancs.innerHTML = Number(sunNarancs.innerHTML) / 1;
+
+    }
+    else{
+        sunJeg.innerText = Number(sunJeg.innerHTML) - 3;
+        sunTeq.innerHTML = Number(sunTeq.innerHTML) - 4;
+        sunSzirup.innerHTML = Number(sunSzirup.innerHTML) - 1;
+        sunNarancs.innerHTML = Number(sunNarancs.innerHTML) / 1;
+
+        sunCount.innerText = Number(sunCount.innerHTML) - 1;
+    }
+});
+
+//Martini
+let martiniMinus = document.querySelector("#martiniMinus");
+let martiniPlus = document.querySelector("#martiniPlus");
+let martini = document.querySelector("#martini");
+let martJeg = document.querySelector("#martJeg");
+let martGin = document.querySelector("#martGin");
+let martCitrom = document.querySelector("#martCitrom");
+
+
+martiniPlus.addEventListener('click', function(){
+    martiniCount.innerText = Number(martiniCount.innerHTML) + 1;
+
+    martini.innerText = Number(martini.innerHTML) + 0.5;
+    martJeg.innerHTML = Number(martJeg.innerHTML) + 4;
+    martGin.innerHTML = Number(martGin.innerHTML) + 2;
+    martCitrom.innerHTML = Number(martCitrom.innerHTML) + 1;
+
+});
+
+martiniMinus.addEventListener('click', function(){
+    if (martiniCount.innerHTML==1) {
+        martiniCount.innerText = 1;
+
+        martini.innerText = Number(martini.innerHTML) / 1;
+        martJeg.innerHTML = Number(martJeg.innerHTML) / 1;
+        martGin.innerHTML = Number(martGin.innerHTML) / 1;
+        martCitrom.innerHTML = Number(martCitrom.innerHTML) / 1;
+
+    }
+    else{
+        martini.innerText = Number(martini.innerHTML) - 0.5;
+        martJeg.innerHTML = Number(martJeg.innerHTML) - 4;
+        martGin.innerHTML = Number(martGin.innerHTML) - 2;
+        martCitrom.innerHTML = Number(martCitrom.innerHTML) / 1;
+
+        martiniCount.innerText = Number(martiniCount.innerHTML) - 1;
+    }
+});
+
+//Green dakiuri
+let greenMinus = document.querySelector("#greenMinus");
+let greenPlus = document.querySelector("#greenPlus");
+let greenJeg = document.querySelector("#greenJeg");
+let greenPisang = document.querySelector("#greenPisang");
+let greenRum = document.querySelector("#greenRum");
+let greenCitrom = document.querySelector("#greenCitrom");
+let greenKarika = document.querySelector("#greenKarika");
+
+
+greenPlus.addEventListener('click', function(){
+    martiniCount.innerText = Number(martiniCount.innerHTML) + 1;
+
+    greenJeg.innerText = Number(greenJeg.innerHTML) + 3;
+    greenPisang.innerHTML = Number(greenPisang.innerHTML) + 6;
+    greenRum.innerHTML = Number(greenRum.innerHTML) + 3;
+    greenCitrom.innerHTML = Number(greenCitrom.innerHTML) + 1;
+    greenKarika.innerHTML = Number(greenKarika.innerHTML) + 1;
+});
+
+greenMinus.addEventListener('click', function(){
+    if (martiniCount.innerHTML==1) {
+        martiniCount.innerText = 1;
+
+        greenJeg.innerText = Number(greenJeg.innerHTML) / 1;
+        greenPisang.innerHTML = Number(greenPisang.innerHTML) / 1;
+        greenRum.innerHTML = Number(greenRum.innerHTML) / 1;
+        greenCitrom.innerHTML = Number(greenCitrom.innerHTML) / 1;
+        greenKarika.innerHTML = Number(greenKarika.innerHTML) / 1;
+
+    }
+    else{
+        greenJeg.innerText = Number(greenJeg.innerHTML) - 3;
+        greenPisang.innerHTML = Number(greenPisang.innerHTML) - 6;
+        greenRum.innerHTML = Number(greenRum.innerHTML) - 3;
+        greenCitrom.innerHTML = Number(greenCitrom.innerHTML) - 1;
+        greenKarika.innerHTML = Number(greenKarika.innerHTML) - 1;
+
+        martiniCount.innerText = Number(martiniCount.innerHTML) - 1;
     }
 });
