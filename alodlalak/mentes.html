@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipster</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stlye.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/alkoholos.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+</head>
+<body>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Sipster</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/alodlalak/alkoholos.html">Alkoholos </a>
+                <a class="nav-item nav-link" href="/alodlalak/mentes.html">Alkohol mentes</a>
+                <a class="nav-item nav-link" href="/alodlalak/tortenet.html">Történet</a>
+                <a class="nav-item nav-link" href="/alodlalak/rolunk.html">Rólunk</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <main class="container">
+
+        <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Safe Sex on the Beach</div>
+            <div class="img-background">
+              <img src="/img/sexonthebeach.png" class="card-img-top drinkPNG" alt="..." style="transform: scaleX(-1);">
+            </div>
+            <div class="card-body">
+              <p class="card-text"><b>Hozzávalók:</b><br>
+                - <span id="BeachJeg">1</span> pohárnyi tört jég<br>
+                - <span id="BeachOszi">60</span> ml őszibaracklé <br>
+                - <span id="BeachNariLe">90</span> ml narancslé<br>
+                - <span id="BeachAfonya">90</span> ml vörösáfonyalé<br>
+                - <span id="BeachNariSzelet">0.5</span> szelet narancs<br><br>  
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="BeachMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="BeachCount">1</label>
+              <button type="button" class="btn" id="BeachPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+              <div class="cimDiv">Virgin Margarita</div>
+              <div class="img-background">
+                  <img src="/img/margarita.png" class="card-img-top drinkPNG"  alt="...">
+              </div>
+              <div class="card-body">
+                  <p class="card-text">
+                      <b>Hozzávalók:</b><br>
+                      - <span id="MargaritaLimeSzirup">3</span> cl lime szirup<br>
+                      - <span id="MargaritaNarancsle">3</span> cl narancslé<br>
+                      - <span id="MargaritaCitromle">1.5</span> cl citromlé<br>
+                      - <span id="MargaritaSzénsavasVíz">4.5</span> cl szénsavas víz<br>
+                      - <span id="MargaritaJégkocka">3</span> db Jégkocka<br>
+                      - <span id="MargaritaLime">1</span> db szelet lime<br>
+                  </p>
+              </div>
+              <div class="adagButton">
+                  <button type="button" class="btn" id="MargaritaMinus"><i class="bi bi-dash-lg"></i></button>
+                  <label for="text" class="serveCount" id="MargaritaCount">1</label>
+                  <button type="button" class="btn" id="MargaritaPlus"><i class="bi bi-plus-lg"></i></button>
+              </div>
+          </div>
+
+         <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Virgin Mojito</div>
+            <div class="img-background">
+              <img src="/img/mojito.png" class="card-img-top drinkPNG" alt="..." style="transform: scaleX(-1);">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="MojitoBarnaCukor">3</span> ek barna cukor<br>
+                - <span id="MojitoJégkocka">1</span> marék jégkocka <br>
+                - <span id="MojitoSzóda">100</span> ml szóda<br> 
+                - <span id="MojitoLimeLé">150</span> ml lime lé<br>
+                - <span id="MojitoMenta">1</span> csokor friss menta<br>
+                - <span id="MojitoLimeSzelet">3</span> szelet lime<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="MojitoMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="MojitoCount">1</label>
+              <button type="button" class="btn" id="MojitoPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+        </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Virgin Bloody Mary</div>
+            <div class="img-background">
+              <img src="/img/bloody mary.png" class="card-img-top drinkPNG" alt="..." style="transform: scaleX(-1);">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="BloodyMaryParadicsomlé">20</span> cl paradicsomlé<br>
+                - <span id="BloodyMaryCitromlé">1</span> cl citromlé<br>
+                - <span id="BloodyMaryWorcesterSzósz">1</span> öntet Worcester szósz<br>
+                - <span id="BloodyMaryTabascoSzósz">2</span> öntet Tabasco szósz<br>
+                - <span>só</span><br>
+                - <span>bors</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="BloodyMaryMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="BloodyMaryCount">1</label>
+              <button type="button" class="btn" id="BloodyMaryPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Baby Colada</div>
+            <div class="img-background">
+              <img src="/img/pinacolada.png" class="card-img-top drinkPNG" alt="..." style="transform: scaleX(-1);">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="BabyColadaAnanász">115</span> g friss ananász<br>
+                - <span id="BabyColadaAnanászlé">100</span> ml ananászlé<br>
+                - <span id="BabyColadaTejszín">50</span> ml tejszín<br>
+                - <span id="BabyColadaKókuszszirup">0.5</span> ek kókuszszirup<br>
+                - <span id="BabyColadaJégkocka">1</span> marék zúzott jég<br>
+                - <span>friss ananász</span><br>
+                - <span>koktélcsersznye</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="BabyColadaMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="BabyColadaCount">1</label>
+              <button type="button" class="btn" id="BabyColadaPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Juicy Watermelon Over Ice</div>
+            <div class="img-background">
+              <img src="/img/Juicy.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="JuicyTonik">150</span> ml tonik<br>
+                - <span id="JuicyCointreau">15</span> ml Cointreau likőr<br>
+                - <span id="JuicyVörösáfonyalé">40</span> ml vörösáfonyalé<br>
+                - <span id="JuicyLimelé">10</span> ml limelé<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="JuicyMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="JuicyCount">1</label>
+              <button type="button" class="btn" id="JuicyPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Narancsos mimóza</div>
+            <div class="img-background">
+              <img src="/img/mimoza.png" class="card-img-top drinkPNG" alt="..." height="500px">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="MimozaPezsgő">7.5</span> cl pezsgő (száraz)<br>
+                - <span id="MimozaNarancslé">7.5</span> cl narancslé<br>
+                - <span id="MimozaNarancsSzelet">1</span> narancs szelet
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="MimozaMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="MimozaCount">1</label>
+              <button type="button" class="btn" id="MimozaPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Dolce & Gabbana</div>
+            <div class="img-background">
+              <img src="/img/dolce.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span>20 cl Coca-Cola Light</span><br>
+                - <span>2 cl grenadint</span><br>
+                - <span>5 db jégkocka</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount">1</label>
+              <button type="button" class="btn"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Epres-Levendulás víz</div>
+            <div class="img-background">
+              <img src="/img/eperViz.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="EpresViz">0.5</span> liter víz<br>
+                - <span id="EpresEper">2</span> db szeletelt friss eper<br>
+                - <span id="EpresLevendula">2</span> db levendulaág<br>
+                - <span id="EpresJég">3</span> db jégkocka<br>
+                - <span id="EpresMenta">2</span> db menta levél
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="EpresMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="EpresCount">1</label>
+              <button type="button" class="btn" id="EpresPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Banános-mogyorókrémes koktél</div>
+            <div class="img-background">
+              <img src="/img/finom.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="BanánosNuttella">2</span> kanál nuttella<br>
+                - <span id="BanánosBanán">0.5</span> db banán<br>
+                - <span id="BanánosCukor">0.5</span> kanál cukor<br>
+                - <span id="BanánosTej">1.5</span> dl tej<br>
+                - <span id="BanánosTejszín">2</span> kanál tejszín
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="BanánosMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="BanánosCount">1</label>
+              <button type="button" class="btn" id="BanánosPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Moscow Mule</div>
+            <div class="img-background">
+              <img src="/img/MoscowMule.png" class="card-img-top drinkPNG" alt="..." style="transform: scaleX(-1);">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="MuleLime">1</span> db lime leve<br>
+                - <span id="MuleCukorszirup">1</span> teáskanál egyszerű cukorszirup<br>
+                - <span id="MuleMenta">3</span> db menta levél<br>
+                - <span id="MuleSzóda">60</span> ml szóda víz<br>
+                - <span id="MuleGyömbérsör">200</span> ml gyömbérsör<br>
+                - <span id="MuleJég">3</span> db jégkocka
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="MuleMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="MuleCount">1</label>
+              <button type="button" class="btn" id="MulePlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Shirley Temple</div>
+            <div class="img-background">
+              <img src="/img/shirley.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="ShirleyLime">1</span> db lime level<br>
+                - <span id="ShirleyCukorszirup">1</span> teáskanál egyszerű cukorszirup<br>
+                - <span id="ShirleyMenta">3</span> db menta levél<br>
+                - <span id="ShirleySzóda">60</span> ml szóda víz<br>
+                - <span id="ShirleyGyömbérsör">200</span> ml gyömbérsör
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="ShirleyMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="ShirleyCount">1</label>
+              <button type="button" class="btn" id="ShirleyPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+          
+
+    </main>
+    <footer>
+        <span>sipstersupp@gmail.com +36306855088</span>
+    </footer>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/mentes.js"></script>
+</body>
+</html>
