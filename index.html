@@ -11,10 +11,14 @@
 </head>
 <body>
     <div class="menu">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Sipster</a>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/index.html">Sipster</a>
+                <select id="modeDropdown" onchange="toggleMode()">
+                    <option value="light">☼</option>
+                    <option value="dark">☾</option>
+                </select>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">☰</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
@@ -60,7 +64,7 @@
         </a>
     </div>
 
-    <footer>
+    <footer class="footer">
         <span>sipstersupp@gmail.com +36306855088</span>
     </footer>
 

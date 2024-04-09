@@ -1,4 +1,32 @@
+
+@font-face{
+    font-family: LilitaOne;
+    src: url(/LilitaOne-Regular.ttf);
+}
+
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 80px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    transition: background-color 0.3s;
+    background-color: #E4E4E4;
+    color: #3C486B;
+    font-family: LilitaOne;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 img{
@@ -18,3 +46,61 @@ h1{
     max-width: 100%;
     height: auto;
 }
+
+.navbar{
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    background-color: #FFFFFF;
+    color: #3C486B;
+    
+}
+
+nav{
+    display: flex;
+    align-content: space-between;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    color: #3C486B;
+    border-radius: 100px;
+    padding: 10px 14px;
+    background: #FFFFFF
+  }
+
+.dark-mode select{
+    background: #2C2C2C;
+    color: #AAE729;
+}
+
+body.dark-mode {
+    background-color: #2C2C2C;
+    color: #AAE729;
+  }
+
+.navbar.dark-mode{
+    background-color: #5B5B5B;
+    color: #AAE729;
+}
+
+.footer.dark-mode{
+    background-color: #5B5B5B;
+    color: #AAE729;
+}
+
+a:link{
+    color: #3C486B;
+}
+
+a:visited{
+    color: #3C486B;
+}
+
+.dark-mode a:link {
+    color: #AAE729;
+  }
+
+  .dark-mode a:visited {
+    color: #AAE729;
+  }
