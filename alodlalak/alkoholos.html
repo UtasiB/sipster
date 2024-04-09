@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipster</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/stlye.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/alkoholos.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
+</head>
+<body>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/index.html">Sipster</a>
+                <select id="modeDropdown" onchange="toggleMode()">
+                    <option value="light">☼</option>
+                    <option value="dark">☾</option>
+                </select>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">☰</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/alodlalak/alkoholos.html">Alkoholos </a>
+                <a class="nav-item nav-link" href="/alodlalak/mentes.html">Alkohol mentes</a>
+                <a class="nav-item nav-link" href="/alodlalak/tortenet.html">Történet</a>
+                <a class="nav-item nav-link" href="/alodlalak/rolunk.html">Rólunk</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <main class="container">
+        <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Sex on the Beach</div>
+            <div class="img-background">
+              <img src="../img/sexonthebeach.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text"><b>Hozzávalók:</b><br>
+                - <span id="BeachVodka">4</span> cl Vodka<br>
+                - <span id="BeachBols">2</span> cl Bols Peach likőr<br>
+                - <span id="BeachNarancs">8</span> cl narancslé<br>
+                - <span id="BeachAfonya">4</span> cl áfonyalé<br><br>  
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="BeachMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="BeachCount">1</label>
+              <button type="button" class="btn" id="BeachPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Pina Colada</div>
+            <div class="img-background" >
+              <img src="/img/pinacolada.png" class="card-img-top drinkPNG"  alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="Crum">4</span> cl  fehér rum<br>
+                - <span id="CKlikor">2</span> cl kókuszlikőr<br>
+                - <span id="CananaszLe">1</span> dl ananászlé<br>
+                - <span id="Ctejszin">2</span> cl tejszín<br>
+                - <span id="Cjeg">4</span> db Jégkocka<br>
+                - <span id="CananaszKo">1</span> db ananászkocka<br> 
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="ColadaMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="ColadaCount">1</label>
+              <button type="button" class="btn" id="ColadaPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Mojito</div>
+            <div class="img-background">
+              <img src="/img/mojito.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="Mrum">7</span> cl rum<br>
+                - <span></span>nádcukor<br>
+                - <span id="Mmenta">10</span> db mentalevél<br> 
+                - <span>ásványvíz</span><br>
+                - <span id="Mango">1</span> öntet Angostura<br>
+                - <span id="Mlime">1</span> db lime<br>
+                - <span id="Mcitrom">0.5</span> fej citrom<br>
+                - <span id="Mjeg">10</span>db Jégkocka<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="MojitoMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="MojitoCount">1</label>
+              <button type="button" class="btn" id="MojitoPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Long island iced tea</div>
+            <div class="img-background">
+              <img src="/img/LLicedTea.png" class="card-img-top drinkPNG" alt="..." >
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="Lvodka">1.5</span> cl vodka<br>
+                - <span id="Lgin">1.5</span> cl gin<br>
+                - <span id="Lrum">1.5</span> cl fehér rum<br>
+                - <span id="Ltequila">1.5</span> cl tequila<br>
+                - <span id="Lcoin">1.5</span> cl cointreau<br>
+                - <span id="Llime">3</span> gerezd lime<br>
+                - <span id="Lszirup">1</span> cl cukorszirup<br>
+                - <span>kóla</span>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="LongMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="LongCount">1</label>
+              <button type="button" class="btn" id="LongPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Moscow mule</div>
+            <div class="img-background">
+              <img src="/img/moscowMule.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="muleVodka">4</span>cl vodka<br>
+                - <span>lime leve</span><br>
+                - <span>felöntve gyömbérsörrel</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="muleMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="muleCount">1</label>
+              <button type="button" class="btn" id="mulePlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Cosmopolitan</div>
+            <div class="img-background">
+              <img src="/img/cosmopolitan.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="cosmoVodka">45</span> ml vodka<br>
+                - <span id="cosmoLikor">15</span> ml Cointreau likőr<br>
+                - <span id="cosmoAfonya">40</span> ml vörösáfonyalé<br>
+                - <span id="cosmoLime">10</span> ml limelé<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="cosmoMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount"  id="cosmoCount">1</label>
+              <button type="button" class="btn" id="cosmoPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Grasshopper</div>
+            <div class="img-background">
+              <img src="/img/grasshopper.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="grassLikor">30</span> ml Bols Peppermint Green likőr<br>
+                - <span id="grassCacao">30</span> ml Bols Cacao White likőr <br>
+                - <span id="grassTejszin">30</span> ml tejszín<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn"  id="grassMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="grassCount">1</label>
+              <button type="button" class="btn" id="grassPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Bloody Mary</div>
+            <div class="img-background">
+              <img src="/img/bloody mary.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="maryVodka">4.5</span>cl vodka<br>
+                - <span id="maryPari">9</span>cl paradicsomlé<br>
+                - <span id="maryCitrom">1.5</span>cl citromlé<br>
+                - <span id="maryLime">10</span> ml limelé<br>
+                - <span id="marySo">1</span> csipet só<br>
+                - <span id="maryBors">1</span> csipet bors<br>
+                - <span>Tabasco szósz</span><br>
+                - <span>Worcestershire szósz</span><br>
+                - <span>Jégkocka</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="maryMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="maryCount">1</label>
+              <button type="button" class="btn" id="maryPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Cuba libre</div>
+            <div class="img-background">
+              <img src="/img/kubilubi.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="cubaJeg">3</span>db jégkocka<br>
+                - <span id="cubaRum">6</span>cl rum<br>
+                - <span>kóla</span><br>
+                - <span>fél citrom(adagonként)</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="cubaMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="cubaCount">1</label>
+              <button type="button" class="btn" id="cubaPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Tequila sunrise</div>
+            <div class="img-background">
+              <img src="/img/tequila.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="sunJeg">3</span>db jégkocka<br>
+                - <span id="sunTeq">4</span>cl tequila<br>
+                - <span id="sunSzirup">1</span>cl granadine-szirup<br>
+                - <span id="sunNarancs">1</span>db narancs karika<br>
+                - <span>narancslé</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="sunMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="sunCount">1</label>
+              <button type="button" class="btn" id="sunPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">James Bond Martini</div>
+            <div class="img-background">
+              <img src="/img/martiniBJ.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="martini">0.5</span>dl Martini<br>
+                - <span id="martJeg">4</span>db jégkocka<br>
+                - <span id="martGin">2</span>cl gin<br>
+                - <span id="martCitrom">1</span> citrom leve<br>
+                - <span>3db olajbogyó</span><br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="martiniMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="martiniCount">1</label>
+              <button type="button" class="btn" id="martiniPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem;">
+            <div class="cimDiv">Green daiquiri</div>
+            <div class="img-background">
+              <img src="/img/DAKIURI.png" class="card-img-top drinkPNG" alt="...">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Hozzávalók:</b><br>
+                - <span id="greenJeg">3</span>db jégkocka<br>
+                - <span id="greenPisang">6</span>cl pisang ambon<br>
+                - <span id="greenRum">3</span>cl rum<br>
+                - <span id="greenCitrom">1</span>cl citromlé<br>
+                - <span id="greenKarika">1</span> citrom karika<br>
+              </p>
+            </div>
+            <div class="adagButton">
+              <button type="button" class="btn" id="greenMinus"><i class="bi bi-dash-lg"></i></button>
+              <label for="text" class="serveCount" id="greenCount">1</label>
+              <button type="button" class="btn" id="greenPlus"><i class="bi bi-plus-lg"></i></button>
+            </div>
+          </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="/js/alkoholo.js"></script>
+</body>
+</html>

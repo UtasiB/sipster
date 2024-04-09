@@ -20,6 +20,22 @@ function toggleMode() {
 
   var selects = document.getElementsByName("select");
 
+  var span = document.getElementsByName("span");
+
+  var card = document.getElementsByClassName("card");
+
+  var cardbody = document.getElementsByClassName("card-body");
+
+  var cimDiv = document.getElementsByClassName("cimDiv");
+
+  var adagButton = document.getElementsByClassName("adagButton");
+
+  var btn = document.getElementsByClassName("btn");
+
+  var btn = document.getElementsByClassName("btn");
+  
+  var btn = document.getElementsByClassName("btn");
+
   for (var k = 0; k < selects.length; k++) {
     selects[k].classList.toggle("dark-mode", selectedMode === "dark");
   }
